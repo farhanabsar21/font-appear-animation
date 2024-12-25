@@ -1,0 +1,21 @@
+{
+  "name": "font-animation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc && copyfiles -u 1 src/index.html src/styles/**/* src/assets/**/* dist",
+    "watch:ts": "npx tsc --watch",
+    "start": "concurrently \"npx tsc --watch\" \"live-server dist\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "copyfiles": "^2.4.1",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
